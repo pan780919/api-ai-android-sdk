@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="55dp"
+            android:id="@+id/id_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_time_bg"
+            android:padding="3dp"
+            android:text="2017/5/11 下午 05:07:58"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/id_image_icon2"
+            android:src="@drawable/photoicon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/id_message2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/my_message_bg1"
+            android:textSize="12sp"
+            android:layout_marginRight="80dp"
+            android:text="我是爱闹小助手，有事请找我"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_toRightOf="@+id/id_image_icon"
+            android:textColor="#000000"
+            android:id="@+id/id_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/my_message_bg1"
+            android:textSize="12sp"
+            android:layout_marginRight="4dp"
+            android:text="我是爱闹小助手，有事请找我"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/id_image_icon"
+            android:src="@drawable/photoicon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

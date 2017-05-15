@@ -53,7 +53,7 @@ public class V20150415ProtocolTest {
     @Test
     public void legacyContextsWithoutParametersTest() throws AIServiceException {
         final AIConfiguration config = new AIConfiguration(
-                "3485a96fb27744db83e78b8c4bc9e7b7",
+                "bfb85b1fa0554b4b8c743b826ffaf2ce",
                 AIConfiguration.SupportedLanguages.English,
                 AIConfiguration.RecognitionEngine.System);
 
