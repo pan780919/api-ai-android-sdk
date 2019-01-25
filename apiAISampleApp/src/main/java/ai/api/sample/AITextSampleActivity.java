@@ -192,7 +192,7 @@ public class AITextSampleActivity extends BaseActivity implements AdapterView.On
                 Log.i(TAG, "Speech: " + speech);
 //                resultTextView.setText(speech);
                 mArray.add(speech);
-                TTS.speak(speech);
+//                TTS.speak(speech);
                 mArrayAdapter.notifyDataSetChanged();
                 final Metadata metadata = result.getMetadata();
                 if (metadata != null) {

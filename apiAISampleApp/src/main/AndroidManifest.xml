@@ -18,11 +18,7 @@
         <activity
             android:name="ai.api.sample.MainActivity"
             android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
@@ -75,6 +71,11 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ai.api.sample.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <receiver android:name=".AISampleAppWidget" >
