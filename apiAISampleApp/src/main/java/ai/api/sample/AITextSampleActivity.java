@@ -278,7 +278,6 @@ public class AITextSampleActivity extends BaseActivity implements AdapterView.On
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            Log.d(TAG, "getView: "+position+"");
             ViewHolder viewHolder;
             if (convertView == null) {
                 convertView = View.inflate(parent.getContext(), R.layout.my_message_item, null);
@@ -293,7 +292,6 @@ public class AITextSampleActivity extends BaseActivity implements AdapterView.On
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
-            Log.d(TAG, "getView: "+myList.get(position).toString());
 
             viewHolder.tv_name_msg.setText(myList.get(position).toString());
             viewHolder.tv_name_msg2.setText(myask.get(position).toString());
