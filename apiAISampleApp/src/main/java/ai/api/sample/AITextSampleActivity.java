@@ -67,6 +67,7 @@ public class AITextSampleActivity extends BaseActivity implements AdapterView.On
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_aitext_sample);
+        TTS.init(getApplicationContext());
 
         mArray = new ArrayList<>();
         myask =new ArrayList<>();
@@ -192,7 +193,7 @@ public class AITextSampleActivity extends BaseActivity implements AdapterView.On
                 Log.i(TAG, "Speech: " + speech);
 //                resultTextView.setText(speech);
                 mArray.add(speech);
-//                TTS.speak(speech);
+                TTS.speak(speech);
                 mArrayAdapter.notifyDataSetChanged();
                 final Metadata metadata = result.getMetadata();
                 if (metadata != null) {
